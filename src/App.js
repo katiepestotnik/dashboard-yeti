@@ -6,7 +6,8 @@ import Visitors from "./components/Visitors";
 
 function App() {
   return (
-    <>
+    <div className="container">
+    <main>
       <div className='outer-container'>
         <SideBar />
         <div className='inner-container'>
@@ -17,7 +18,9 @@ function App() {
         </div>
       </div>
 
-    </>
+    </main>
+    </div>
+
   );
 }
 

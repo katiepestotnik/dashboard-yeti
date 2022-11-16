@@ -1,6 +1,6 @@
 const Analysis = () => {
     return (
-        <div>
+        <div className="analysis boxes">
             <h3>Sentiment Analysis</h3>
             <div>960</div>
             <div>122</div>

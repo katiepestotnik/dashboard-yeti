@@ -1,15 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+body{
+  background-color: #0f50ff;
+  font-family: 'Sono', sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+main{
+  margin: 5%;
+  background-color: #fff;
+}
+
 .outer-container {
-  height: 100vh;
+  height: 80vh;
   display: flex;
+  padding: 10px;
 }
 .inner-container {
-  width: 60%;
+  width: 70%;
+  display: grid;
+  grid-template-areas:
+  "one two three"
+  "one two three"
+  "one two three"
+  "four four four"
+  "four four four"
+  "four four four"
+}
+.boxes{
+  padding: 10px;
+  margin: 5px;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .side {
-  width: 40%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 10px;
+  background-color: #ccc;
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.review{
+  grid-area: one;
+
+}
+.rating{
+  grid-area: two;
+}
+.analysis{
+  grid-area: three;
+}
+.visit{
+  grid-area: four;
+  padding: 10px;
+  background-color: #ccc;
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+img{
+  display: inline-block;
+  height: 250px;
+  width:100%;
+  margin-top: 20px;
 }
 
 

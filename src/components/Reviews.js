@@ -1,7 +1,7 @@
 const Reviews = () => {
     return(
-    <div>
-        <h3>Reviews</h3>
+    <div className="review boxes">
+        <h3>Reviews</h3><br/>
         <div>1,281</div>
     </div>
     )
