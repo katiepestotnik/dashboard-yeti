@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
-
+.full{
+  height: 100vh;
+}
 body{
   background-color: #0f50ff;
   font-family: 'Sono', sans-serif;
@@ -10,7 +12,6 @@ main{
   margin: 5%;
   background-color: #fff;
 }
-
 .outer-container {
   height: 80vh;
   display: flex;
@@ -48,7 +49,6 @@ main{
 }
 .review{
   grid-area: one;
-
 }
 .rating{
   grid-area: two;
@@ -69,5 +69,3 @@ img{
   width:100%;
   margin-top: 20px;
 }
-
-
