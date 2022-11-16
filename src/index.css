@@ -1,0 +1,15 @@
+.outer-container {
+  height: 100vh;
+  display: flex;
+}
+.inner-container {
+  width: 60%;
+}
+.side {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
