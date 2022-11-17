@@ -1,6 +1,6 @@
-const Reviews = (props) => {
+const Reviews = ({isOn}) => {
     return(
-    <div className={props.isOn?'review boxes':'review boxes-dark'}>
+    <div className={isOn?'review boxes':'review boxes-dark'}>
         <h3>Reviews</h3><br/>
         <div>1,281</div>
     </div>
