@@ -1,6 +1,6 @@
-const SideBar = () => {
+const SideBar = (props) => {
     return (
-        <div className="side">
+        <div className={props.isOn?'side':'dark-box'}>
             <div>Dashboard</div><br/>
             <div>Widget</div><br/>
             <div>Reviews</div><br/>

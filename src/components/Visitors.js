@@ -1,6 +1,6 @@
-const Visitors = () => {
+const Visitors = (props) => {
     return (
-        <div className="visit">
+        <div className={props.isOn?'visit':'visit-dark'}>
             <h3>Website Visitors</h3>
             <div className="num">15,074</div>
             <img src='https://peacockcreative.net/wp-content/uploads/2017/06/website-traffic-increase.jpg' alt='graph'></img>

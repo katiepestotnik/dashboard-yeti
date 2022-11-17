@@ -1,6 +1,6 @@
-const Analysis = () => {
+const Analysis = (props) => {
     return (
-        <div className="analysis boxes">
+        <div className={props.isOn?'analysis boxes':'analysis boxes-dark'}>
             <h3>Sentiment Analysis</h3>
             <div>960</div>
             <div>122</div>

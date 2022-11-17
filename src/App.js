@@ -5,26 +5,27 @@ import Reviews from "./components/Reviews";
 import Rating from "./components/Rating";
 import Analysis from "./components/Analysis";
 import Visitors from "./components/Visitors";
-import Button from './components/Button'
 
 function App() {
   const [isOn, setIsOn] = useState(false)
   const handleClick = (e) => {
     setIsOn(state => !state)
-    if (isOn) e.target.innerHTML = 'LIGHT'
-    if(!isOn)e.target.innerHTML = 'DARK'
+    if (isOn) e.target.innerHTML = 'LIGHT MODE'
+    if(!isOn)e.target.innerHTML = 'DARK MODE'
 }
   return (
-    <div className='full' style={{ backgroundColor: isOn ? '#001242' : '#0f50ff' }}>
-      <button onClick={handleClick}>LIGHT</button>
+    <div className={isOn?'light':'dark'}>
+      <div className='btn'>
+        <button onClick={handleClick}>THEME CHANGE</button>
+      </div>
       <main>
         <div className='outer-container'>
-          <SideBar />
+          <SideBar isOn={isOn}/>
         <div className='inner-container'>
-          <Reviews />
-          <Rating />
-          <Analysis />
-          <Visitors/>
+            <Reviews isOn={isOn} />
+            <Rating isOn={isOn} />
+            <Analysis isOn={isOn} />
+            <Visitors isOn={isOn} />
         </div>
         </div>
       </main>
