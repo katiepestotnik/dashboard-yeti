@@ -45,10 +45,6 @@ main{
   display: grid;
   grid-template-areas:
   "one two three"
-  "one two three"
-  "one two three"
-  "four four four"
-  "four four four"
   "four four four"
 }
 .boxes{
